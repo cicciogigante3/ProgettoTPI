@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e9ecef;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+#titoloHeader {
+  display: flex;          
+  flex-direction: row;     
+  align-items: center;    
+  justify-content: center; 
+  gap: 20px;               
+}
+
+/* Titolo */
+#titoloPagina {
+  padding: 15px 30px;
+  font-size: 28px;
+  font-weight: bold;
+  background: white;
+  border: 3px solid black;
+  border-radius: 15px;
+  margin: 0;             
+  flex-shrink: 0;        
+}
+
+
+#header {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  background: white;
+  border: 3px solid black;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex-shrink: 0;        
+}
+
+
+#header input,
+#header select,
+#header button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#header button {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#header button:hover {
+  background: #004acc;
+}
+
+.kanban {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.colonna {
+  background: white;
+  flex: 1;
+  min-width: 250px;
+  border-radius: 10px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  height: calc(100vh - 180px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.colonna h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.colonna ul {
+  list-style: none;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+li {
+  background: #f2f2f2;
+  margin-bottom: 10px;
+  padding: 10px;
+
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  font-weight: 500;
+}
+
+li button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+li button:hover {
+  background: #333;
+}

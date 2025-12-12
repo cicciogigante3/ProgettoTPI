@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Appunti - Fullscreen</title>
+  </head>
+
+  <body>
+    <div id="titoloHeader">
+      <h1 id="titoloPagina">Gestione Appunti</h1>
+      <div id="header">
+        <input
+          id="titoloInput"
+          type="text"
+          placeholder="Scrivi un appunto..."
+        />
+        <select id="listaSelect">
+          <option value="lavoro">Lavoro</option>
+          <option value="scuola">Scuola</option>
+          <option value="personale">Personale</option>
+          <option value="altro">Altro</option>
+        </select>
+        <button id="postTest">Aggiungi</button>
+      </div>
+    </div>
+    <!-- HEADER -->
+
+    <!-- KANBAN A TUTTA PAGINA -->
+    <div class="kanban">
+      <div class="colonna">
+        <h3>Lavoro</h3>
+        <ul id="lista-lavoro"></ul>
+      </div>
+
+      <div class="colonna">
+        <h3>Scuola</h3>
+        <ul id="lista-scuola"></ul>
+      </div>
+
+      <div class="colonna">
+        <h3>Personale</h3>
+        <ul id="lista-personale"></ul>
+      </div>
+
+      <div class="colonna">
+        <h3>Altro</h3>
+        <ul id="lista-altro"></ul>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
